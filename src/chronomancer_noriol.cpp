@@ -26,7 +26,7 @@ static bool IsPlayerBot(Player* player)
     {
         return false;
     }
-    PlayerbotAI* botAI = sPlayerbotsMgr->GetPlayerbotAI(player);
+    PlayerbotAI* botAI = sPlayerbotsMgr.GetPlayerbotAI(player);
     return botAI && botAI->IsBotAI();
 }
 
